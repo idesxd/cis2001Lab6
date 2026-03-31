@@ -22,7 +22,6 @@ class Map:
                 self._buckets[self._get_bucket_index(pair[0])].append(pair)
 
 
-
     def _get_bucket_index(self, key):
         return hash(key) % len(self._buckets)
 
